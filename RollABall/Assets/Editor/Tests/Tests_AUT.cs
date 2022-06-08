@@ -79,7 +79,7 @@ public class Tests_AUT
 
         var scrollbar = altUnityDriver.WaitForObject(By.NAME, "Handle");
         var scrollbarInitialPosition = scrollbar.getScreenPosition();
-
+        
         var scrollBarMoved = new AltUnityVector2(scrollbar.x, scrollbar.y - 100);
         altUnityDriver.MoveMouse(scrollBarMoved, 1);
 

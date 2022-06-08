@@ -18,7 +18,7 @@ MonoBehaviour:
   XcrunPath: /usr/bin/xcrun
   MyTests:
   - _selected: 0
-    _testName: C:/Users/andra.cardas/Desktop/git-roll/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testName: C:/Users/andra.cardas/Desktop/game1/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
@@ -29,21 +29,21 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
-  - _selected: 0
+    _testSelectedCount: 11
+  - _selected: 1
     _testName: Tests_AUT
-    _status: 0
+    _status: 1
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
-    _parentName: C:/Users/andra.cardas/Desktop/git-roll/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _parentName: C:/Users/andra.cardas/Desktop/game1/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _testCaseCount: 11
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-    _testSelectedCount: 1
-  - _selected: 0
+    _testSelectedCount: 11
+  - _selected: 1
     _testName: Tests_AUT.TestBallMovesOnPressKeys
     _status: 1
     _isSuite: 0
@@ -53,10 +53,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 12.3802174
+    _testDuration: 12.4653783
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestBeginMoveEndTouchMovesScrollbar
     _status: 1
     _isSuite: 0
@@ -66,10 +66,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 0.9806362
+    _testDuration: 0.234948
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestClickNearScrollBarMovesScrollBar
     _status: 1
     _isSuite: 0
@@ -79,10 +79,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.1889191
+    _testDuration: 1.2228731
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestDoubleClick
     _status: 1
     _isSuite: 0
@@ -92,10 +92,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.218063
+    _testDuration: 1.2931676
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestKeyDownAndKeyUpMouse0MovesScrollBar
     _status: 1
     _isSuite: 0
@@ -105,10 +105,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.3499522
+    _testDuration: 1.385518
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestMoveBallWithMoveMouse
     _status: 1
     _isSuite: 0
@@ -118,10 +118,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 9.224912
+    _testDuration: 9.2355103
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestMoveMouseOnScrollbar
     _status: 1
     _isSuite: 0
@@ -131,10 +131,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 3.2900598
+    _testDuration: 0.4798863
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestPressKeyNearScrollBarMovesScrollBar
     _status: 1
     _isSuite: 0
@@ -144,10 +144,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 1.277891
+    _testDuration: 1.3256335
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestScrollOnScrollbar
     _status: 1
     _isSuite: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 2.2118939
+    _testDuration: 2.2125922
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
   - _selected: 1
@@ -170,10 +170,10 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 3.232373
+    _testDuration: 3.1930975
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
-  - _selected: 0
+  - _selected: 1
     _testName: Tests_AUT.TestTiltBall
     _status: 1
     _isSuite: 0
@@ -183,11 +183,11 @@ MonoBehaviour:
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
-    _testDuration: 3.1726857
+    _testDuration: 3.1857732
     path: Assets/Editor/Tests/Tests_AUT.cs
     _testSelectedCount: 0
   - _selected: 1
-    _testName: C:/Users/andra.cardas/Desktop/git-roll/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+    _testName: C:/Users/andra.cardas/Desktop/game1/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
     _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
@@ -200,7 +200,7 @@ MonoBehaviour:
     path: 
     _testSelectedCount: 0
   - _selected: 1
-    _testName: C:/Users/andra.cardas/Desktop/git-roll/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    _testName: C:/Users/andra.cardas/Desktop/game1/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.Rider.Editor.dll
     _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
@@ -213,7 +213,7 @@ MonoBehaviour:
     path: 
     _testSelectedCount: 0
   - _selected: 0
-    _testName: C:/Users/andra.cardas/Desktop/git-roll/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _testName: C:/Users/andra.cardas/Desktop/game1/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
     _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
@@ -230,7 +230,7 @@ MonoBehaviour:
     _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestFixture
-    _parentName: C:/Users/andra.cardas/Desktop/git-roll/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _parentName: C:/Users/andra.cardas/Desktop/game1/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
     _testCaseCount: 4
     _foldOut: 0
     _testResultMessage: 
@@ -291,7 +291,7 @@ MonoBehaviour:
     path: Packages/com.unity.inputsystem/Tests/IntegrationTests
     _testSelectedCount: 0
   - _selected: 1
-    _testName: C:/Users/andra.cardas/Desktop/git-roll/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+    _testName: C:/Users/andra.cardas/Desktop/game1/rollaball-csharp-tests/RollABall/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
     _status: 0
     _isSuite: 1
     _type: NUnit.Framework.Internal.TestAssembly
@@ -308,10 +308,10 @@ MonoBehaviour:
   StandaloneTarget: 5
   RanInEditor: 0
   ScenePathDisplayed: 0
-  InputVisualizer: 0
+  InputVisualizer: 1
   ShowPopUp: 1
   BuildLocationPath: 
   LatestInspectorVersion: 1.4.0
   ShowInsectorPopUpInEditor: 0
   AltUnityTesterPort: 13000
-  KeepAUTSymbolDefined: 0
+  KeepAUTSymbolDefined: 1
