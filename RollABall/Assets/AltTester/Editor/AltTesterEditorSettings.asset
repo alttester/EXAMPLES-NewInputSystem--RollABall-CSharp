@@ -1,0 +1,428 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073b5878cbef2364cb928faafba64ca5, type: 3}
+  m_Name: AltTesterEditorSettings
+  m_EditorClassIdentifier: 
+  appendToName: 0
+  AdbPath: /usr/local/bin/adb
+  IProxyPath: /usr/local/bin/iproxy
+  XcrunPath: /usr/bin/xcrun
+  MyTests:
+  - _selected: 0
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 11
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 1
+  - _selected: 0
+    _testName: Tests_AltTester
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 11
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 1
+  - _selected: 0
+    _testName: Tests_AltTester.TestBallMovesOnPressKeys
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestBeginMoveEndTouchMovesScrollbar
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: Tests_AltTester.TestClickNearScrollBarMovesScrollBar
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 1
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 1.360969
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestDoubleClick
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestKeyDownAndKeyUpMouse0MovesScrollBar
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestMoveBallWithMoveMouse
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestMoveMouseOnScrollbar
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestPressKeyNearScrollBarMovesScrollBar
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestScrollOnScrollbar
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestSwipeOnScrollbar
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: Tests_AltTester.TestTiltBall
+    _testAssembly: Assembly-CSharp-Editor
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: Tests_AltTester
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/Tests/Tests_AltTester.cs
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+    _testAssembly: Unity.VisualStudio.Editor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    _testAssembly: UnityEngine.TestRunner
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    _testAssembly: UnityEditor.TestRunner
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    _testAssembly: Unity.Rider.Editor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.Integration_CanSendAndReceiveEvents
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
+    _testAssembly: Unity.InputSystem.IntegrationTests
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: IntegrationTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Packages/com.unity.inputsystem/Tests/IntegrationTests
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+    _testAssembly: Unity.InputSystem.TestFramework
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/AltTester.dll
+    _testAssembly: AltTester
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: TestExample
+    _testAssembly: AltTester
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestFixture
+    _parentName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/AltTester.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  - _selected: 0
+    _testName: TestExample.Test
+    _testAssembly: AltTester
+    _status: 0
+    _isSuite: 0
+    _type: NUnit.Framework.Internal.TestMethod
+    _parentName: TestExample
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/AltTester/Editor/DefaultTestExample.txt
+    _testSelectedCount: 0
+  - _selected: 1
+    _testName: D:/AltTester/Unity/NIS_ex/ExForUsers/EXAMPLES-NewInputSystem--RollABall-CSharp/RollABall/Library/ScriptAssemblies/AltTesterEditor.dll
+    _testAssembly: AltTesterEditor
+    _status: 0
+    _isSuite: 1
+    _type: NUnit.Framework.Internal.TestAssembly
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+    _testSelectedCount: 0
+  Scenes:
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/MiniGame.unity
+    _buildIndex: 0
+  platform: 1
+  StandaloneTarget: 5
+  RanInEditor: 1
+  ScenePathDisplayed: 0
+  InputVisualizer: 1
+  ShowPopUp: 1
+  BuildLocationPath: 
+  LatestDesktopVersion: 
+  ShowDesktopPopUpInEditor: 0
+  createXMLReport: 0
+  xMLFilePath: 
+  AltTesterPort: 13000
+  KeepAUTSymbolDefined: 1
