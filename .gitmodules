@@ -1,0 +1,3 @@
+[submodule "RollABall/Assets/AltTester-Unity-SDK"]
+	path = RollABall/Assets/AltTester-Unity-SDK
+	url = https://github.com/alttester/AltTester-Unity-SDK.git
