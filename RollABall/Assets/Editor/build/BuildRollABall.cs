@@ -97,6 +97,7 @@ class BuildRollABall
     Debug.Log("Instrumenting with proxyHost: " + proxyHost + ", proxyPort: " + proxyPort);
 
   }
+  
   static void RemoveAltUnity(BuildTargetGroup buildTargetGroup)
   {
     AltBuilder.RemoveAltTesterFromScriptingDefineSymbols(buildTargetGroup);
