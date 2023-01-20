@@ -98,6 +98,7 @@ public class Tests_AltTester
         var scrollbar = altDriver.FindObject(By.NAME, "Handle");
         var scrollbarPosition = scrollbar.getScreenPosition();
         int fingerId = altDriver.BeginTouch(scrollbar.getScreenPosition());
+        altDriver.MoveTouch(fingerId, scrollbarPosition);
         AltVector2 newPosition = new AltVector2(scrollbar.x, scrollbar.y - 500);
         altDriver.MoveTouch(fingerId, newPosition);
         altDriver.EndTouch(fingerId);
