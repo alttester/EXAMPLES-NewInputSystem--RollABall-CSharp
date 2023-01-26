@@ -1,7 +1,7 @@
 name: Build Roll a Ball with NIS
 on:
   push:
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 jobs:
   build-windows:
