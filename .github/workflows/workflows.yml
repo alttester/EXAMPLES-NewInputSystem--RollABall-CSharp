@@ -28,6 +28,7 @@ jobs:
           projectPath: RollABall/
           buildMethod: BuildRollABall.WindowsBuildForRollABallFromCommandLine
           targetPlatform: StandaloneWindows
+      - run: ls
       - uses: actions/upload-artifact@v2
         with:
           path: RollABallWindows
