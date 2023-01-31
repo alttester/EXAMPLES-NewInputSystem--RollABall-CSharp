@@ -30,7 +30,7 @@ jobs:
           targetPlatform: StandaloneWindows
           
       - run: ls
-      - run: ls build/
+      - run: ls build/StandaloneWindows/
       - uses: actions/upload-artifact@v2
         with:
-          path: build/
+          path: build/StandaloneWindows
