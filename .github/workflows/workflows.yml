@@ -31,6 +31,7 @@ jobs:
           
       - run: ls
       - run: ls build/StandaloneWindows/
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3.1.0
         with:
-          path: build/StandaloneWindows
+          name: RollABall 
+          path: build
