@@ -6,6 +6,10 @@ using UnityEngine;
 
 class BuildRollABall
 {
+	public static void WindowsBuildForRollABallFromCommandLine(){
+		WindowsBuildFromCommandLine(true,13000);
+	}
+
 	static void WindowsBuildFromCommandLine(bool withAltunity, int proxyPort = 13000)
   {
     SetPlayerSettings(false);
@@ -14,7 +18,7 @@ class BuildRollABall
     BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
     buildPlayerOptions.scenes = new string[]
     {
-            "Assets/Scenes/MainGame.unity"
+            "Assets/Scenes/MiniGame.unity"
     };
     if (withAltunity)
     {
@@ -30,7 +34,7 @@ class BuildRollABall
     buildPlayerOptions.targetGroup = BuildTargetGroup.Standalone;
     if (withAltunity)
     {
-      buildPlayerOptions.options = BuildOptions.Development;
+      buildPlayerOptions.options = BuildOptions.Development| BuildOptions.IncludeTestAssemblies;
     }
     BuildGame(buildPlayerOptions, withAltunity, proxyPort: proxyPort);
 
