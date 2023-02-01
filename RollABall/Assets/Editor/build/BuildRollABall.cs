@@ -27,7 +27,7 @@ class BuildRollABall
     }
     else
     {
-      buildPlayerOptions.locationPathName = "TrashCatWindows/RollABall.exe";
+      buildPlayerOptions.locationPathName = "RollABallWindows/RollABall.exe";
 
     }
     buildPlayerOptions.target = BuildTarget.StandaloneWindows;
