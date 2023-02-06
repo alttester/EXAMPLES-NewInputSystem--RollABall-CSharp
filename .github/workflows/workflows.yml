@@ -28,6 +28,7 @@ jobs:
           projectPath: RollABall/
           buildMethod: BuildRollABall.WindowsBuildForRollABallFromCommandLine
           targetPlatform: StandaloneWindows
+          customImage: 'unityci/editor:2021.3.16f1-base-0'
           
       - uses: actions/upload-artifact@v3.1.0
         with:
