@@ -15,7 +15,7 @@ The tested actions are: move mouse, click, begin/move/end touch, swipe, key down
 
     <br> 
 2. Download AltTester Unity SDK and import it into Unity 
-    - download the AltTester Unity SDK from the Altom website (https://altom.com/testing-tools/alttester/) or using this link https://altom.com/app/uploads/AltTester/sdks/AltTester.unitypackage;
+    - download the AltTester Unity SDK from the Altom website (https://alttester.com/alttester/#pricing) or using this link https://alttester.com/app/uploads/AltTester/sdks/AltTester.unitypackage;
     - import the package into the project (drag-n-drop the package in the Assets folder);
     - a pop-up will appear, select All and click on Import.
     
