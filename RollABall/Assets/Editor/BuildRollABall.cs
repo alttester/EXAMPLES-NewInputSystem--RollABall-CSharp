@@ -27,6 +27,29 @@ public class BuildRollABall
 {
     private static readonly NLog.Logger logger = EditorLogManager.Instance.GetCurrentClassLogger();
 
+    [MenuItem("Build/Windows")]
+    protected static void WindowsBuildFromCommandLine()
+    {
+        try
+        {
+            SetCommonSettings(BuildTargetGroup.Standalone);
+
+            PlayerSettings.fullScreenMode = UnityEngine.FullScreenMode.Windowed;
+            PlayerSettings.defaultScreenHeight = 1080;
+            PlayerSettings.defaultScreenWidth = 1920;
+
+            logger.Debug("Starting Windows build..." + PlayerSettings.productName + " : " + PlayerSettings.bundleVersion);
+            var buildPlayerOptions = GetBuildPlayerOptions("RollABall.exe", BuildTarget.StandaloneWindows64);
+            buildGame(buildPlayerOptions, BuildTargetGroup.Standalone);
+
+        }
+        catch (Exception exception)
+        {
+            logger.Error(exception);
+        }
+
+    }
+
 
     [MenuItem("Build/Mac")]
     protected static void MacBuildFromCommandLine()
