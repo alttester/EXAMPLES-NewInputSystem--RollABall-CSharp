@@ -1,6 +1,6 @@
 name: Build RollABall
 
-on: [workflow_dispatch]
+on: [push, workflow_dispatch]
 concurrency:
   group: build-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
