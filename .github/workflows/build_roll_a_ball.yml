@@ -1,0 +1,113 @@
+name: Build RollABall
+
+on: [push, workflow_dispatch]
+concurrency:
+  group: build-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-windows:
+    runs-on: [self-hosted, Windows, product]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - name: Build RollABall
+        shell: bash
+        run: |
+          export ALTSERVER_PORT=13000
+          export ALTSERVER_HOST="192.168.11.35"
+          "$UNITY_2021_3_HOME" -batchmode -stackTraceLogType None -projectPath $CI_PROJECT_DIR/RollABall -executeMethod BuildRollABall.WindowsBuildFromCommandLine -logFile buildWindows.log -quit
+
+      - uses: actions/upload-artifact@v4
+        if: always() # run this step even if one of the previous steps failed
+        with:
+          name: BuildWindowsArtifact
+          path: |
+            **/RollABall.exe
+            **/*.log
+
+  build-macOS:
+    runs-on: [self-hosted, MAC37]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - name: Build RollABall
+        run: |
+          export ALTSERVER_PORT=13000
+          export ALTSERVER_HOST="192.168.11.35"
+          $UNITY_2021_3_HOME -batchmode -stackTraceLogType None -projectPath $CI_PROJECT_DIR/RollABall -executeMethod BuildRollABall.MacBuildFromCommandLine -logFile buildMac.log -quit
+
+      - uses: actions/upload-artifact@v4
+        if: always() # run this step even if one of the previous steps failed
+        with:
+          name: BuildMacArtifact
+          path: |
+            **/RollABall.app
+            **/*.log
+
+  build-android:
+    runs-on: [self-hosted, MAC37]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - name: Build RollABall
+        run: |
+          export ALTSERVER_PORT=13000
+          export ALTSERVER_HOST="192.168.11.35"
+          $UNITY_2021_3_HOME -batchmode -stackTraceLogType None -projectPath $CI_PROJECT_DIR/RollABall -executeMethod BuildRollABall.AndroidBuildFromCommandLine -logFile buildAndroid.log -quit
+
+      - uses: actions/upload-artifact@v4
+        if: always() # run this step even if one of the previous steps failed
+        with:
+          name: BuildAndroidArtifact
+          path: |
+            **/RollABall.apk
+            **/*.log
+
+  build-iOS:
+    runs-on: [self-hosted, MAC37]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - name: Build RollABall
+        run: |
+          export ALTSERVER_PORT=13000
+          export ALTSERVER_HOST="192.168.11.35"
+          $UNITY_2021_3_HOME -batchmode -stackTraceLogType None -projectPath $CI_PROJECT_DIR/RollABall -executeMethod BuildRollABall.IosBuildFromCommandLine -logFile buildiOS.log -quit
+
+      - uses: actions/upload-artifact@v4
+        if: always() # run this step even if one of the previous steps failed
+        with:
+          name: BuildiOSArtifact
+          path: |
+            **/RollABall
+            **/*.log
+
+  build-WebGL:
+    runs-on: [self-hosted, MAC37]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: "recursive"
+
+      - name: Build RollABall
+        run: |
+          export ALTSERVER_PORT=13000
+          export ALTSERVER_HOST="192.168.11.35"
+          $UNITY_2021_3_HOME -batchmode -stackTraceLogType None -projectPath $CI_PROJECT_DIR/RollABall -executeMethod BuildRollABall.WebGLBuildFromCommandLine -logFile buildWebGL.log -quit
+
+      - uses: actions/upload-artifact@v4
+        if: always() # run this step even if one of the previous steps failed
+        with:
+          name: BuildWebGLArtifact
+          path: |
+            **/build/webgl
+            **/*.log

@@ -3,3 +3,5 @@
 **/[Tt]emp/
 **/[Oo]bj/
 **/[Ll]ogs/
+*.csproj
+*.sln

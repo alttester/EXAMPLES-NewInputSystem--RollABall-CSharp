@@ -69,7 +69,7 @@ public class Tests_AltTester
         altDriver.Swipe(new AltVector2(scrollbar.x, scrollbar.y), new AltVector2(scrollbar.x, scrollbar.y - 200), 3);
         scrollbar = altDriver.WaitForObject(By.NAME, "Handle");
         AltVector2 scrollbarFinalPosition = new AltVector2(scrollbar.worldX, scrollbar.worldY);
-        Assert.AreNotEqual(scrollbarInitialPosition.y,scrollbarFinalPosition.y);
+        Assert.AreNotEqual(scrollbarInitialPosition.y, scrollbarFinalPosition.y);
     }
 
     [Test]
@@ -79,7 +79,7 @@ public class Tests_AltTester
 
         var scrollbar = altDriver.WaitForObject(By.NAME, "Handle");
         var scrollbarInitialPosition = scrollbar.getScreenPosition();
-        
+
         var scrollBarMoved = new AltVector2(scrollbar.x, scrollbar.y - 100);
         altDriver.MoveMouse(scrollBarMoved, 1);
 
@@ -191,7 +191,7 @@ public class Tests_AltTester
         var button = altDriver.FindObject(By.NAME, "SpecialButton").Click();
         Thread.Sleep(1000);
         button.Click();
-        var text = altDriver.FindObject(By.PATH,"//ScrollCanvas/SpecialButton/Text (TMP)").GetText();
-        Assert.AreEqual("2",text);
+        var text = altDriver.FindObject(By.PATH, "//ScrollCanvas/SpecialButton/Text (TMP)").GetText();
+        Assert.AreEqual("2", text);
     }
 }
