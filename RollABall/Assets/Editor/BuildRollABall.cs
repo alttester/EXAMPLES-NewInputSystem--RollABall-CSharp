@@ -86,7 +86,7 @@ public class BuildRollABall
             PlayerSettings.Android.bundleVersionCode = int.Parse(PlayerSettings.bundleVersion);
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel23;
 #if UNITY_2018_1_OR_NEWER
-                PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARMv7;
+            PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARMv7;
 #endif
             logger.Debug("Starting Android build..." + PlayerSettings.productName + " : " + PlayerSettings.bundleVersion);
             var buildPlayerOptions = GetBuildPlayerOptions("RollABall.apk", BuildTarget.Android, false);
@@ -197,13 +197,13 @@ public class BuildRollABall
             if (results.Equals(""))
             {
                 logger.Info("Build succeeded!");
-                EditorApplication.Exit(0);
+                // EditorApplication.Exit(0);
 
             }
             else
                 {
                     logger.Error("Build failed!");
-                    EditorApplication.Exit(1);
+                    // EditorApplication.Exit(1);
                 }
 
 #else
@@ -214,14 +214,19 @@ public class BuildRollABall
         else
         {
             logger.Error("Total Errors: " + results.summary.totalErrors);
-            logger.Error("Build failed! " + results.steps + "\n Result: " + results.summary.result + "\n Stripping info: " + results.strippingInfo);
-            EditorApplication.Exit(1);
+            logger.Error("Steps: ");
+            foreach (var step in results.steps)
+            {
+                logger.Error(step + "\n");
+            }
+            logger.Error("Build failed!  Result: " + results.summary.result + "\n Stripping info: " + results.strippingInfo);
+            // EditorApplication.Exit(1);
         }
 
 #endif
 
         logger.Info("Finished. " + PlayerSettings.productName + " : " + PlayerSettings.bundleVersion);
-        EditorApplication.Exit(0);
+        // EditorApplication.Exit(0);
     }
     public static void SetCommonSettings(BuildTargetGroup targetGroup)
     {
@@ -234,7 +239,7 @@ public class BuildRollABall
         AltBuilder.AddAltTesterInScriptingDefineSymbolsGroup(targetGroup);
 
     }
-    public static BuildPlayerOptions GetBuildPlayerOptions(string locationPathName, BuildTarget target, bool autorun = true)
+    public static BuildPlayerOptions GetBuildPlayerOptions(string locationPathName, BuildTarget target, bool autorun = false)
     {
         return new BuildPlayerOptions
         {
