@@ -17,6 +17,7 @@ jobs:
           path: EX 
 
       - name: Build RollABall
+        shell: bash
         run: |
           export ALTSERVER_PORT=13000
           export ALTSERVER_HOST="192.168.11.35"
