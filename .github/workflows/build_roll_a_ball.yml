@@ -9,12 +9,9 @@ jobs:
   build-windows:
     runs-on: [self-hosted, Windows, product]
     steps:
-      - name: Set custom working directory
-        run: echo "GITHUB_WORKSPACE=C:/Users/AltTester/actions-runner/_work/EX" >> $GITHUB_ENV
       - uses: actions/checkout@v3
         with:
           submodules: "recursive"
-          path: EX 
 
       - name: Build RollABall
         shell: bash
